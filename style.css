@@ -1,0 +1,55 @@
+/* O seletor * significa todos os elementos da página.*/
+*{
+    margin: 0; /*remove as margens padrão do navegador.*/
+    padding: 0; /*remove os espaçamentos internos padrão.*/
+    box-sizing: border-box; /*faz com que largura e altura incluam borda e padding, facilitando o layout. */
+    
+}
+
+body{
+    display: flex; /*Transforma o body em um Flex Container.*/
+    justify-content: center; /*Centraliza os elementos na horizontal.*/
+    align-items: center; /*Centraliza na vertical.*/
+    min-height: 100vh; /*100vh = ocupa toda a altura da tela*/
+    background-color: #1f1f1f; /*Define um fundo escuro.*/
+    font-family: Arial, Helvetica, sans-serif; /*Define a fonte da página.*/
+}
+
+.calculadora{
+    background-color: #2d2d2d; /*Cor da calculadora.*/
+    padding: 20px; /*Cria um espaço interno.*/
+    border-radius: 15px; /*Arredonda os cantos.*/
+    width: 350px; /*Define a largura da calculadora.*/
+    box-shadow: 0 10px 25px rgba(0,0,0,.4); /*Cria a sombra.*/
+}
+
+#visor{
+    width: 100%; /*ocupa toda a largura da calculadora.*/
+    height: 70px; /*altura do visor.*/
+    margin-bottom: 20px; 
+    font-size: 2rem; /*números grandes.*/
+    text-align: right; /*números aparecem à direita, como em uma calculadora real.*/
+    padding: 10px; /*espaço interno.*/
+    border: none; /*remove a borda padrão.*/
+    border-radius: 10px; /*cantos arredondados.*/
+}
+
+.botoes{
+    display: grid; /*Transforma a área dos botões em uma grade.*/
+    grid-template-columns: repeat(4,1fr); /*4 colunas, todas com o mesmo tamanho.*/
+    gap: 10px; /*Espaço entre os botões.*/
+}
+
+button{
+    height: 60px; /*altura dos botões.*/
+    font-size: 1,3rem; /*tamanho dos números.*/
+    border: none; 
+    border-radius: 10px; /*cantos arredondados.*/
+    cursor: pointer; /*muda o cursor para uma mãozinha ao passar sobre o botão.*/
+    transition: .2s; /*deixa as mudanças de estilo suaves.*/
+}
+
+button:hover{ /*Quando o usuário passar o mouse sobre um botão, ele aumentará levemente de tamanho, dando um efeito visual agradável.*/
+    transform: scale(1.05);
+}
+

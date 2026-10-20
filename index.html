@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--Diz ao navegador que o documento é HTML5.-->
+<html lang="pt-BR"> <!--Define que o idioma da página é português do Brasil.-->
+
+<head> <!--Contém informações da página (título, estilos, configurações).-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!--É onde ficará tudo que será exibido ao usuário.-->
+
+<!--A div funciona como uma "caixa". Ela serve para agrupar elementos relacionados.
+Neste caso, tudo que pertence à calculadora ficará dentro dela.-->
+
+    <main class="Calculadora">  
+
+        <input 
+
+            type="text"  
+            id="visor"
+            readonly
+        >
+
+        <div class="botoes">
+
+            <button data-acao="limpar">C</button>
+            <button data-operador="/">÷</button>
+            <button data-operador="*">×</button>
+            <button data-operador="-">−</button>
+
+            <button data-numero="7">7</button>
+            <button data-numero="8">8</button>
+            <button data-numero="9">9</button>
+            <button data-operador="+">+</button>
+
+            <button data-numero="4">4</button>
+            <button data-numero="5">5</button>
+            <button data-numero="6">6</button>
+
+            <button data-numero="1">1</button>
+            <button data-numero="2">2</button>
+            <button data-numero="3">3</button>
+
+            <button data-numero="0">0</button>
+            <button data-numero=".">.</button>
+            <button data-acao="igual">=</button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
